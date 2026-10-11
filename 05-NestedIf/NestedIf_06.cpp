@@ -2,18 +2,22 @@
 using namespace std;
 
 int main() {
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
+    int a, b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
 
-    if (n > 0) {
-        if (n % 2 == 0)
-            cout << "Positive Even Number";
+    if (a > b) {
+        if (a > 0)
+            cout << "A is largest and positive";
         else
-            cout << "Positive Odd Number";
+            cout << "A is largest but not positive";
     }
-    else
-        cout << "Number is not positive";
+    else {
+        if (b > 0)
+            cout << "B is largest and positive";
+        else
+            cout << "B is largest but not positive";
+    }
 
     return 0;
 }
